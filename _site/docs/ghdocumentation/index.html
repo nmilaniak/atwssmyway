@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>ATWSS</title>
+		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/css/multilevelmenu.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="/css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component2.css" />
+		<link rel="stylesheet" href="/css/gallery.css">
+		<link rel="stylesheet" href="/css/gallery2.css">
+		<link rel="stylesheet" type="text/css" href="/engine1/style.css" />
+		<script src="/js/modernizr.custom.25376.js"></script>
+		<script src="/js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+	<body>
+		<div id="perspective" class="perspective effect-moveleft">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						<a class="codrops-icon codrops-icon-prev" href="javascript:history.back(-1);">Previous Page</a>
+						<span class="right"><a class="codrops-icon codrops-icon-drop" href="/index.html"><span>Main page</span></a></span>
+					</div>
+					<header class="codrops-header">
+						<h1>ATLAS Experiment<span>ATWSS Project</span></h1>	
+					</header>
+					<div class="main clearfix">
+						<div class="related" style="padding-left:20px;">
+							<p><button id="showMenu">MENU</button></p>
+							<p>Go to the navigation of the ATWSS system</p>
+						</div>
+						<div class = "wrapper">     <div class="container" style="text-align: justify;">
+
+       		<div class="row clearfix">  
+       		    <div class="col-md-12 column" style="text-align: justify;">     	
+       <h2>What was the idea behind making this site?</h2>
+       <h3>But firstly, how can you build it?</h3>
+        		</div>
+        	</div>
+       <div class="row clearfix">
+       	<div class="col-md-6 column" style="text-align: justify;">
+       		<p>Don't be afraid. It's really simple once you get to know the basic things about building pages.
+       		The most important thing is to document everything you do. So that when someone else comes and would want to see what you have done and doesn't know the first thing about it, he can check out the README.md and have the essential components explained. 
+       		</p>
+       		<h1></h1>
+       			<ul>
+			<h4><li>The basics</li></h4>
+       		<p> The same thing goes for building pages like this one. The knowledge you need to understand "how it's made" are basics of html, css, JQuery, JavaScript.</p>
+       		<p>All the above are explained in a very easy, clear when at <a href="http://www.codecademy.com">Codecademy</a>. You can take the courses and learn it, or move forward to the next step.
+			</p>
+
+			</ul>
+
+       	</div>
+       	<div class="col-md-6 column">
+        	<img src="http://blogs.telerik.com/images/default-source/kendoui-blog-posts/36467v-jpg" width="100%"></img>
+        </div>
+        </div>
+        <div class="row clearfix">
+        	<div class="col-md-12 column" style="text-align: justify;">
+        <ul>
+        	<h4><li>Github</li></h4>
+			<p>The best place to store all of your work is <a href="http://www.github.com">Github</a>. It is extremaly user-friendly. You simply sign-up, download a version of github suitable for your operating system --> <a href="https://mac.github.com/">MAC</a> or <a href="https://windows.github.com/">Windows</a> and you are good to go!</p>
+			<p>What can you do here? Well... for starters you can "FORK" stuff form other people, which is really easy and it is also a very good way of getting to know the structure of the whole thing.</p>
+			<p>To show you how easy it really is, chek out this 15 minutes starter <a href="https://try.github.io/levels/1/challenges/1">at Github</a>.</p>
+			<p>After going through that we're pretty sure that you will have no problems with running your own github repository. But just to make sure you're fine, let us give you access to some cool pages that can make your gaining knowledge process easier</p>
+		<h4><li>Jekyll</li></h4>
+			<p>Adding Jekyll to your system is very useful, then you are able to build your website in a very easy and straight-forward way! You can add tabs, make default layouts for every tab without having to actually make a layout for every one separetaly!</p>
+			<p>The main thing you need to do is to get to know your Terminal better. Become friends. I know it may sound funny, but it it neccesary in order to download all the components in a easy way. </p>
+			<p>To download and use jekyll command in your terminal you need to download some other things. Firstly RVM or Homebrew </p>
+				<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable
+or 
+<span class="nv">$ </span>mkdir homebrew <span class="o">&amp;&amp;</span> curl -L https://github.com/Homebrew/homebrew/tarball/master <span class="p">|</span> tar xz --strip <span class="m">1</span> -C homebrew &gt;in your /usr/local&lt;</code></pre></div>
+			<p>Nextly you will have to put in all these commands in your terminal, depending on what you are using staring with either 'rvm' or 'brew' --> like below. </p>
+			<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>brew install ruby
+<span class="nv">$ </span>brew install ruby-devel		<span class="o">(</span>ruby-dev on ubuntu<span class="o">)</span>
+<span class="nv">$ </span>brew install rubygems
+<span class="nv">$ </span>brew install gcc
+<span class="nv">$ </span>gem install jekyll</code></pre></div>
+		<h4><li>Oracle</li></h4>
+		<p>What to do next? Well this is the moment when Oracle comes in handy. You simply go to the <a href="http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html">site</a> and download 'instantclient: basic, sdk and sqlplus'. Choose the one compatible with your operating system.</p>
+		<p>Now you need to create a directory in your terminal in <code>/usr/opt/oracle/instantclient_version</code> and unzip all of those instantclients there. While your current directory is /usr/opt/oracle/instantclient_version do the step below.</p>
+		<p></p>
+		<p>After that you have to change the PATH, simply put commands below in your terminal</p>
+		<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ DYLD_LIBRARY_PATH</span><span class="o">=</span>/opt/oracle/instantclient_version <span class="nb">export </span>DYLD_LIBRARY_PATH
+<span class="nv">$ ORACLE_HOME</span><span class="o">=</span>/opt/oracle/instantclient_version <span class="nb">export </span>ORACLE_HOME
+<span class="nv">$ </span><span class="nb">cd</span> /opt/oracle/instantclient_version
+<span class="nv">$ </span>ln -s libclntsh.dylib.11.1 libclntsh.dylib
+<span class="nv">$ </span>gem install ruby-oci8
+and also
+<span class="nv">$ </span>cp config/oracle_example.rb config/oracle.rb</code></pre></div>
+
+		<h4><li>Back to github</li></h4>
+			<p>Once you hav installed all the componets you can either create your own website (a litlle hard for the begining) or fork somebody's work and start to understand how the system works. We suggest to fork the site from <a href="https://github.com/jekyll/jekyll">jekyll</a> to make sure how to build your own page based on all the necesary components.</p>
+			<p>You simply have to sign-in and press <strong>FORK</strong> and then the whole directory is on your account. Now you have to go to it, and click on the Jekyll Repository and then click <strong>Clone in desktop</strong>! And now you have it on your desktop! When you make changes in the documents on your computer, they are automaticly synchronized with github, to change them permenantly on your account to simply have to <em>Commit</em> and it's done!</p>
+		<h4><li>Jekyll once again</li></h4>
+			<p>Now simply open your terminal --> go to the directory which contains your site, for example <code>cd Desktop/Jekyll-master</code> and then type: </p>
+			<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ruby -rubygems db-test.rb
+<span class="nv">$ </span>jekyll build
+<span class="nv">$ </span>jekyll serve</code></pre></div>
+			<p>This command has created a new directory in your project which is called <em>_site</em>. It is now ready to be thrown to the deep oceans of web.</p>
+			<p>Now, just simply type <code>localhost:4000</code> in your browser and the whole site is yours to explore!</p>
+		<h4><li>MAMP</li></h4>
+		<p>Alternatively you can use something esle, which we strongly recommend, which is MAMP. You can download it <a href="http://www.mamp.info/en/mamp-pro/">here</a>. It is also a local server where you can see your website at work. Simply at the Apache Tab change the root to the newly made directory <em>_site</em> click <b>Start Servers</b> and your site is ready at <code>localhost:8000</code></p>
+			<h5>How easy was that?!</h5>
+			<p>If you had any problems do not hesitate to contact me <code>@natalia.milaniak@cern.com </code></p>
+		<h4><li>Some additional stuff</li></h4>
+		<p>If you want to make your site look better and more professional, you should make sure to use <i><b>Bootstrap</b></i> and <b><i>Highcharts</i></b></p>
+		<p>They are these simple but very useful tools to improve the looks of your site. You can go through the documentation for them right here <a href="http://getbootstrap.com/getting-started/">Bootstrap</a> and <a href="http://www.highcharts.com/docs">Highcharts</a></p>
+		<p></p>
+		</ul>
+		</div>
+		</div>
+		</div>
+
+</div>
+<hr>
+						<div class="related">
+							<p>Brought to you by</p>
+							<p><a href="mailto:nataliamilaniak@cern.ch">Natalia Milaniak</a></p><p> and </p>
+							<p><a href="mailto:aleksandramieszkowska@cern.ch">Aleksandra Mieszkowska</a></p>
+						</div>
+					</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav right vertical">
+				<a href="/docs/overview" class="icon-home">Overview</a>
+				<a href="/docs/cern/interventions" class="icon-lock">Interventions</a>
+				<a href="/docs/cern/dosimeters" class="icon-lock">Dosimeters</a>
+				<a href="/docs/group" class="icon-star">Group</a>
+				<a href="/docs/people" class="icon-mail">People</a>
+				<a href="/docs/companies" class="icon-lock">Companies</a>
+				<a href="/docs/documentation" class="icon-lock">Documentation</a>
+				<a href="/docs/ghdocumentation" class="icon-lock">Github Documentation</a>
+				<a href="/docs/gallery" class="icon-image">Gallery</a>
+			</nav>
+		</diatwv><!-- /perspective -->
+		<script src="/js/classie.js"></script>
+		<script src="/js/menu.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.dlmenu.js"></script>
+		<script src="js/pagetransitions.js"></script>
+		<script type="text/javascript" src="/engine1/wowslider.js"></script>
+		<script type="text/javascript" src="/engine1/script.js"></script>
+	</body>
+</html>

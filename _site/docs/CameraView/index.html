@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>ATWSS</title>
+		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="/css/multilevelmenu.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="/css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component2.css" />
+		<link rel="stylesheet" href="/css/gallery.css">
+		<link rel="stylesheet" href="/css/gallery2.css">
+		<link rel="stylesheet" type="text/css" href="/engine1/style.css" />
+		<script src="/js/modernizr.custom.25376.js"></script>
+		<script src="/js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+	<body>
+		<div id="perspective" class="perspective effect-moveleft">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					<div class="codrops-top clearfix">
+						<a class="codrops-icon codrops-icon-prev" href="javascript:history.back(-1);">Previous Page</a>
+						<span class="right"><a class="codrops-icon codrops-icon-drop" href="/index.html"><span>Main page</span></a></span>
+					</div>
+					<header class="codrops-header">
+						<h1>ATLAS Experiment<span>ATWSS Project</span></h1>	
+					</header>
+					<div class="main clearfix">
+						<div class="related" style="padding-left:20px;">
+							<p><button id="showMenu">MENU</button></p>
+							<p>Go to the navigation of the ATWSS system</p>
+						</div>
+						<div class = "wrapper">     <div class="container" style="margin-left:300px;">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <div class="container-x2">
+    		    <div class="col-md-6 column" style="margin-top: 250px;">
+       	      <h3>What Camera View is?</h3>
+              <p>What was the first idea?</p>
+		      		<p>Whose idea was it?</p>
+              <p>What are the functions?</p>
+              <p>What we will be able to achieve?</p>
+    		    </div>
+            <div class="col-md-6 column" style="margin-top: 200px;">
+				      <h3>How does it look like?</h3>
+             	<img src="/img/gopro.jpg" width="100%"></img>
+            </div>
+		      </div>
+          </div>
+          </div>
+          <div class="container" style="height: 300px;"></div>
+          <div class="row clearfix" >
+        		<div class="col-md-12 column" > 
+            <div class="container-x3" >
+            <div class="col-md-12 column" style="margin-top: 200px;">
+            <h2>Live streaming</h2>
+           		<!--<embed src="/img/lhc.mp4" width=100%></embed>
+           	</div>-->
+            </div>
+            </div>
+            </div>
+            </div>
+          <div class="container" style="height: 300px;"></div>
+
+          
+          <div class="row clearfix">
+      			<div class="col-md-12 column">
+            <div class="container-x2">
+            <div class="col-md-12 column">
+           		<h3>What is going on?</h3>
+              <script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/mapdata/index.js?1"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
+<script src="http://www.highcharts.com/samples/maps/demo/all-maps/jquery.combobox.js"></script>
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<div id="demo-wrapper">
+    <div id="mapBox">
+        <div id="up"></div>
+        <div class="selector">
+            <button id="btn-prev-map" class="prev-next"><i class="fa fa-angle-left"></i></button>
+            <select id="mapDropdown" class="ui-widget combobox"></select>
+            <button id="btn-next-map" class="prev-next"><i class="fa fa-angle-right"></i></button>
+        </div>
+        <div id="container"></div> 
+    </div>
+    <div id="sideBox">
+        
+        <input type="checkbox" id="chkDataLabels" checked='checked' />
+        <label for="chkDataLabels" style="display: inline">Data labels</label>
+        <div id="infoBox">
+            <h4>This map</h4>
+            <div id="download"></div>
+        </div>
+    </div>
+</div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+         <!--<div class="row clearfix">
+            <hr>
+            <div class="col-md-12 column">
+              <nav class="navbar navbar-default">
+          <!-- rozciaganie po calej szerokosci ekranu: -->
+              <div class="container-fluid">   
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                 <!-- <a class="navbar-brand" href="#">Library</a> -->
+                </div>
+                <!--<div class="navbar-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Data <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#1" data-toggle="tab">Time1</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#2" data-toggle="tab">Time2</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#3" data-toggle="tab">Time3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#4" data-toggle="tab">Time4</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#5" data-toggle="tab">Time5</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#6" data-toggle="tab">Time6</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#7" data-toggle="tab">Time7</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#8" data-toggle="tab">Time8</a></li>
+                              <!-- <li class="divider"></li>-->   
+                     <!-- </ul>
+                    </li>
+                  </ul>
+                </div>-->
+              </div>
+          <div class="container" style="height: 300px;"></div>
+        		<div class="col-md-12 column">
+            <div class="container-x3">
+            <div class="col-md-12 column" style="margin-top: 30px;">
+              <div class="row clearfix">
+              <h4>Date, time</h4>
+            <div class="col-md-3 column">
+              <a href="#img1" class="title move" data-title="..." href="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+              <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img1">
+              <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img2" class="title move" data-title="..." href="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img2">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              </a>
+
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img3" class="title move" data-title="..." href="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img3">
+              <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+            <a href="#img4" class="title move" data-title="..." href="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img4">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="row clearfix">
+              <h4>Date, time</h4>
+            <div class="col-md-3 column">
+              <a href="#img5" class="title move" data-title="..." href="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+              <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img5">
+              <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img6" class="title move" data-title="..." href="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg" style="width: 100%; height: 140px; "></a>
+              <a href="#_" class="lightbox" id="img6">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img7" class="title move" data-title="..." href="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img7">
+                <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+            <a href="#img8" class="title move" data-title="..." href="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg" style="width: 100%; height: 140px; "></a>
+              <a href="#_" class="lightbox" id="img8">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="row clearfix">
+              <h4>Date, time</h4>
+            <div class="col-md-3 column">
+              <a href="#img9" class="title move" data-title="..." href="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+                <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg" style="width: 100%; height: 140px;"></a>
+                <a href="#_" class="lightbox" id="img9">
+                <img src="https://espace.cern.ch/CRSS/Seminar%20Agenda/Cern%20picture.jpg">
+            </a>
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img10" class="title move" data-title="..." href="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img10">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/5/55/CERN_Wooden_Dome_5.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+              <a href="#img11" class="title move" data-title="..." href="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img11">
+                <img src="http://hcpss.web.cern.ch/hcpss/images/cern1-no-grid.jpg">
+              </a>
+            </div>
+            <div class="col-md-3 column">
+            <a href="#img12" class="title move" data-title="..." href="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg" style="width: 100%; height: 140px;"></a>
+              <a href="#_" class="lightbox" id="img12">
+              <img src="http://blog.sciencemuseum.org.uk/insight/files/2013/07/CMS.-Credit-CERN.jpg">
+              </a>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <h1></h1>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </script>
+</div>
+<hr>
+						<div class="related">
+							<p>Brought to you by</p>
+							<p><a href="mailto:nataliamilaniak@cern.ch">Natalia Milaniak</a></p><p> and </p>
+							<p><a href="mailto:aleksandramieszkowska@cern.ch">Aleksandra Mieszkowska</a></p>
+						</div>
+					</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav right vertical">
+				<a href="/docs/overview" class="icon-home">Overview</a>
+				<a href="/docs/cern/interventions" class="icon-lock">Interventions</a>
+				<a href="/docs/cern/dosimeters" class="icon-lock">Dosimeters</a>
+				<a href="/docs/group" class="icon-star">Group</a>
+				<a href="/docs/people" class="icon-mail">People</a>
+				<a href="/docs/companies" class="icon-lock">Companies</a>
+				<a href="/docs/documentation" class="icon-lock">Documentation</a>
+				<a href="/docs/ghdocumentation" class="icon-lock">Github Documentation</a>
+				<a href="/docs/gallery" class="icon-image">Gallery</a>
+			</nav>
+		</diatwv><!-- /perspective -->
+		<script src="/js/classie.js"></script>
+		<script src="/js/menu.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.dlmenu.js"></script>
+		<script src="js/pagetransitions.js"></script>
+		<script type="text/javascript" src="/engine1/wowslider.js"></script>
+		<script type="text/javascript" src="/engine1/script.js"></script>
+	</body>
+</html>
